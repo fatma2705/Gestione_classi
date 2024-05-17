@@ -71,7 +71,7 @@ public class Classe {
 
 	@Override
 	public String toString() {
-		return "Classe [id=" + id + ", anno=" + anno + ", sezione=" + sezione ;
+		return "Classe [id=" + id + ", anno=" + anno + ", sezione=" + sezione;
 	}
 
 }

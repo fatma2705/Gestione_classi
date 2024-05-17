@@ -96,7 +96,7 @@ public class Studente {
 	@Override
 	public String toString() {
 		return "Studente [id=" + id + ", matricola=" + matricola + ", nome=" + nome + ", cognome=" + cognome
-				+ ", dataNascita=" + dataNascita ;
+				+ ", dataNascita=" + dataNascita;
 	}
 
 }
