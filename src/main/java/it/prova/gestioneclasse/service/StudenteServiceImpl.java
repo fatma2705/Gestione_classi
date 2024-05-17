@@ -19,7 +19,7 @@ public class StudenteServiceImpl implements StudenteService {
 	@Autowired
 	private EntityManager entityManager;
 
-	@Transactional(readOnly = true)
+	 
 	public List<Studente> listAllStudenti() {
 		return (List<Studente>) studenteRepository.findAll();
 	}
