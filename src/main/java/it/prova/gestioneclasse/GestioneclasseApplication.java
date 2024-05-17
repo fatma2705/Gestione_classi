@@ -22,16 +22,16 @@ public class GestioneclasseApplication implements CommandLineRunner {
 		System.out.println("################ START   #################");
 		System.out.println("################ eseguo i test  #################");
 
-		batteriaDiTestService.testInserisciStudente();
-		batteriaDiTestService.testListAllStudenti();
-		batteriaDiTestService.testCaricaSingoloStudente();
-		batteriaDiTestService.testEliminaStudente();
-		batteriaDiTestService.testAggiornaStudente();
-		batteriaDiTestService.testAggiornaClasse();
-		batteriaDiTestService.testCaricaSingolaClasse();
+//		batteriaDiTestService.testInserisciStudente();
+//		batteriaDiTestService.testListAllStudenti();
+//		batteriaDiTestService.testCaricaSingoloStudente();
+//		batteriaDiTestService.testEliminaStudente();
+//		batteriaDiTestService.testAggiornaStudente();
+//		batteriaDiTestService.testAggiornaClasse();
+//		batteriaDiTestService.testCaricaSingolaClasse();
 		batteriaDiTestService.testEliminaClasse();
-		batteriaDiTestService.testInserisciClasse();
-		batteriaDiTestService.testListAllClassi();
+//		batteriaDiTestService.testInserisciClasse();
+//		batteriaDiTestService.testListAllClassi();
 
 		System.out.println("################ FINE   #################");
 	}

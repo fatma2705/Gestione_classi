@@ -10,6 +10,8 @@ public interface ClasseService {
 
 	public Classe caricaSingolaClasse(Long id);
 
+	public Classe caricaSingolaClasseFetch(Long id);
+
 	public void aggiorna(Classe classe);
 
 	public void inserisciNuovo(Classe classe);
@@ -17,4 +19,5 @@ public interface ClasseService {
 	public void rimuovi(Classe classe);
 
 	public List<Classe> findByExample(Classe example);
+
 }

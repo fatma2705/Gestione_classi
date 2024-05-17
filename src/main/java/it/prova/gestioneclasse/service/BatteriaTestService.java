@@ -111,8 +111,12 @@ public class BatteriaTestService {
 			throw new RuntimeException("testEliminaClasse.....failed, il DB e' gia vuoto....");
 
 		try {
+			classeService.caricaSingolaClasseFetch(classeDB.get(0).getId()).getStudenti().stream().forEach(stud -> {
+				studenteService.rimuovi(stud);
+			});
 			classeService.rimuovi(classeDB.get(0));
 		} catch (Exception e) {
+			e.printStackTrace();
 			System.out.println("testEliminaClasse.....failed,cancellazione non avvenuta");
 		}
 

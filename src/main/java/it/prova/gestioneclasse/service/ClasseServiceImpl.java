@@ -28,6 +28,11 @@ public class ClasseServiceImpl implements ClasseService {
 	public Classe caricaSingolaClasse(Long id) {
 		return classeRipository.findById(id).orElse(null);
 	}
+	
+	@Transactional(readOnly = true)
+	public Classe caricaSingolaClasseFetch(Long id) {
+		return classeRipository.findByIdEager(id);
+	}
 
 	@Transactional
 	public void aggiorna(Classe classe) {
