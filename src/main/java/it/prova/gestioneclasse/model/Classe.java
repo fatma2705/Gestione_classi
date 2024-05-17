@@ -69,4 +69,9 @@ public class Classe {
 		this.studenti = studenti;
 	}
 
+	@Override
+	public String toString() {
+		return "Classe [id=" + id + ", anno=" + anno + ", sezione=" + sezione ;
+	}
+
 }

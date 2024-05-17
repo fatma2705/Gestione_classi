@@ -93,4 +93,10 @@ public class Studente {
 		this.classe = classe;
 	}
 
+	@Override
+	public String toString() {
+		return "Studente [id=" + id + ", matricola=" + matricola + ", nome=" + nome + ", cognome=" + cognome
+				+ ", dataNascita=" + dataNascita ;
+	}
+
 }
