@@ -53,7 +53,7 @@ public class StudenteServiceImpl implements StudenteService {
 
 		if (!(ObjectUtils.isEmpty(example.getMatricola())))
 			query += " and s.matricola like '%" + example.getMatricola() + "%'";
-		if (!(ObjectUtils.isEmpty(example.getMatricola())))
+		if (!(ObjectUtils.isEmpty(example.getNome())))
 			query += " and s.nome like '%" + example.getNome() + "%'";
 		if (!(ObjectUtils.isEmpty(example.getCognome())))
 			query += " and s.cognome like '%" + example.getCognome() + "%'";

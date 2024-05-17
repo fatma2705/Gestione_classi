@@ -48,7 +48,7 @@ public class ClasseServiceImpl implements ClasseService {
 
 	@Transactional(readOnly = true)
 	public List<Classe> findByExample(Classe example) {
-		String query = "select c from classe c where c.id=c.id";
+		String query = "select c from Classe c where c.id=c.id";
 
 		if (!(ObjectUtils.isEmpty(example.getSezione())))
 			query += " and c.sezione like '%" + example.getSezione() + "%'";
