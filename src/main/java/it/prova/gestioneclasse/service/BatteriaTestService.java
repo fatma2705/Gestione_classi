@@ -27,7 +27,7 @@ public class BatteriaTestService {
 	}
 
 	public void testCaricaSingoloStudente() {
-		Studente studente = studenteService.caricoSingoloStudente(5L);
+		Studente studente = studenteService.caricoSingoloStudente(28L);
 		if (studente == null)
 			throw new RuntimeException("testCaricaSingoloStudente.....failed, Studente non trovato.");
 		System.out.println(studente + "\n testCaricaSingoloStudente.....OK");
@@ -90,7 +90,7 @@ public class BatteriaTestService {
 	}
 
 	public void testCaricaSingolaClasse() {
-		Classe classe = classeService.caricaSingolaClasse(5L);
+		Classe classe = classeService.caricaSingolaClasse(3L);
 		if (classe == null)
 			throw new RuntimeException("testCaricaSingolaClasse.....failed, classe non trovata.");
 		System.out.println(classe + "\n testCaricaSingolaClasse.....OK");
@@ -115,6 +115,7 @@ public class BatteriaTestService {
 				studenteService.rimuovi(stud);
 			});
 			classeService.rimuovi(classeDB.get(0));
+			System.out.println("\n testEliminaClasse...... OK");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("testEliminaClasse.....failed,cancellazione non avvenuta");
